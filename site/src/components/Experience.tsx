@@ -2,27 +2,48 @@ import Image from 'next/image'
 
 const experiences = [
   {
-    title: 'Software Engineer',
-    company: 'Tech Innovations Inc.',
-    period: '2022 - Present',
-    image: '/experience1.jpg',
+    title: 'Software Engineering Intern',
+    company: 'Humana',
+    period: 'Present',
+    image: '/images/experience/humana.png',
     description: [
-      'Developed and maintained full-stack applications using React, Node.js, and PostgreSQL',
-      'Implemented CI/CD pipelines using GitHub Actions and Docker',
-      'Collaborated with cross-functional teams to deliver features on schedule',
-      'Mentored junior developers and conducted code reviews'
+      'Intern on the Claims Administration Systems (CAS) team',
     ]
   },
   {
-    title: 'Software Development Intern',
-    company: 'Digital Solutions Ltd.',
-    period: '2021',
-    image: '/experience2.jpg',
+    title: 'Teaching Assistant',
+    company: 'The Ohio State University',
+    period: 'Fall 2024',
+    image: '/images/projects/OSU.png',
     description: [
-      'Built responsive web applications using React and TypeScript',
-      'Integrated REST APIs and implemented state management using Redux',
-      'Participated in daily stand-ups and sprint planning meetings',
-      'Wrote unit tests and documentation for new features'
+      'Taught 70+ students core engineering principles, technical writing, and MATLAB programming'
+    ]
+  },
+  {
+    title: 'Host',
+    company: 'Jeff Ruby Culinary Entertainment',
+    period: 'Summer 2024',
+    image: '/images/experience/jeff.png',
+    description: [
+      'Served as a host and food runner for 300+ guests daily'
+    ]
+  },
+  {
+    title: 'Product Management Intern',
+    company: 'GE Aerospace',
+    period: 'Summer 2022',
+    image: '/images/experience/GE.png',
+    description: [
+      'Shadowed the role of Technical Product Manager in the Edison Works military division, creating dashboards in Rally to track progress and productivity, creating a new document management system for the department, and learning AGILE and LEAN best practices'
+    ]
+  },
+  {
+    title: 'Instructor',
+    company: 'iDaP Academy',
+    period: 'Summer 2021',
+    image: '/images/experience/idap.png',
+    description: [
+      'Taught core programming concepts to elementary and middle school students through Lego Robotics and game development'
     ]
   }
 ]

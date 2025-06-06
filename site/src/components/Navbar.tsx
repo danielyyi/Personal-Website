@@ -35,7 +35,7 @@ export default function Navbar() {
             href="#home"
             className="text-xl font-bold text-gray-800 hover:text-gray-600 transition-colors"
           >
-            Your Name
+            Daniel Yi
           </Link>
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (

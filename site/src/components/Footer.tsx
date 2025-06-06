@@ -4,9 +4,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold mb-4">Daniel Yi</h3>
             <p className="text-gray-400">
-              Computer Science Student & Software Developer passionate about creating innovative solutions.
+              Honors Computer Science Student at The Ohio State University
             </p>
           </div>
           <div>
@@ -40,7 +40,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Daniel Yi. All rights reserved.</p>
         </div>
       </div>
     </footer>

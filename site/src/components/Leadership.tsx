@@ -2,15 +2,12 @@ import Image from 'next/image'
 
 const leadershipRoles = [
   {
-    title: 'Computer Science Club President',
-    organization: 'University CS Club',
-    period: '2022 - Present',
-    image: '/leadership1.jpg',
+    title: 'Vice President of DE&I',
+    organization: 'Pi Sigma Epsilon',
+    period: 'Fall 2024 - Present',
+    image: '/images/leadership/psephoto.jpg',
     description: [
-      'Led a team of 10 officers in organizing weekly workshops and hackathons',
-      'Increased club membership by 40% through outreach initiatives',
-      'Organized successful tech talks with industry professionals',
-      'Managed club budget and secured sponsorships from tech companies'
+      'Foster professional development for 140+ members by planning cultural outings, presenting on current events, and scheduling panels with diverse business leaders'
     ]
   },
   {

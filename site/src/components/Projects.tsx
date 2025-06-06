@@ -3,50 +3,66 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
-    description: 'A full-stack e-commerce platform built with Next.js, Node.js, and PostgreSQL. Features include user authentication, product management, shopping cart, and payment integration.',
-    image: '/project1.jpg',
-    technologies: ['Next.js', 'Node.js', 'PostgreSQL', 'Stripe'],
+    title: 'TL;DR Chrome Extension',
+    description: ' (IN PROGRESS) Summarize selected pieces of text in articles, websites, and more',
+    image: '/images/projects/chrome.png',
+    technologies: ['Python', 'JavaScript', 'Chrome', 'OpenAI API'],
     githubLink: 'https://github.com/yourusername/ecommerce',
     liveLink: 'https://ecommerce-demo.com'
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, team workspaces, and progress tracking. Built using React, Firebase, and Material-UI.',
-    image: '/project2.jpg',
-    technologies: ['React', 'Firebase', 'Material-UI', 'Redux'],
+    title: 'AutoIntelligence',
+    description: 'AI-powered program that detects when drivers are distracted from the road. I built this alongside a mock-Lyft app that could utilize this technology to asses the safety rating of drivers. Runner-up of the 2024 Hack OHI/O Hackathon (Honda Track).',
+    image: '/images/projects/blackcar.png',
+    technologies: ['Python', 'React', 'OpenCV', 'MediaPipe'],
     githubLink: 'https://github.com/yourusername/task-manager',
     liveLink: 'https://task-manager-demo.com'
   },
   {
-    title: 'Weather Dashboard',
-    description: 'A weather dashboard that displays current conditions and forecasts using OpenWeatherMap API. Features include location search, 5-day forecast, and weather alerts.',
-    image: '/project3.jpg',
-    technologies: ['JavaScript', 'OpenWeatherMap API', 'Chart.js', 'Bootstrap'],
+    title: 'NewThreads',
+    description: 'Full-stack website designed to help startup clothing brands gain exposure to shoppers looking to support small, niche businesses.',
+    image: '/images/projects/nt.png',
+    technologies: ['React', 'Express', 'Node', 'MongoDB', 'GraphQL'],
     githubLink: 'https://github.com/yourusername/weather-dashboard',
     liveLink: 'https://weather-dashboard-demo.com'
   },
   {
-    title: 'Recipe Finder',
-    description: 'A recipe search application that helps users discover new recipes based on available ingredients. Includes meal planning features and nutritional information.',
-    image: '/project4.jpg',
-    technologies: ['React', 'Spoonacular API', 'Tailwind CSS', 'Context API'],
+    title: 'Buckeye Course Guide',
+    description: 'At Ohio State, it\'s difficult to search for classes that cross off requirements. This website allows students to paste in chunks of courses from their Degree Audit and Advising Report to easily look up class information.',
+    image: '/images/projects/osu.png',
+    technologies: ['JavaScript', 'React', 'OSU API'],
     githubLink: 'https://github.com/yourusername/recipe-finder',
     liveLink: 'https://recipe-finder-demo.com'
   },
   {
-    title: 'Fitness Tracker',
-    description: 'A fitness tracking application that helps users monitor their workouts, set goals, and track progress. Includes exercise library and progress visualization.',
-    image: '/project5.jpg',
-    technologies: ['React Native', 'Firebase', 'Redux', 'Chart.js'],
+    title: 'Youstagram',
+    description: 'An Instagram-like social media site with CRUD functionality. Customize and share posts, leave comments, search for users, etc.',
+    image: '/images/projects/you.png',
+    technologies: ['React', 'Express', 'Node', 'MongoDB'],
     githubLink: 'https://github.com/yourusername/fitness-tracker',
     liveLink: 'https://fitness-tracker-demo.com'
   },
   {
-    title: 'Portfolio Website',
-    description: 'A modern portfolio website built with Next.js and Tailwind CSS. Features responsive design, dark mode, and smooth animations.',
-    image: '/project6.jpg',
-    technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
+    title: 'Bedwarstats.com',
+    description: 'A stat-tracker website for a Minecraft PvP mini-game called \"Bedwars\". Displays player data and gives insights on strengths and weaknesses in an organized manner.',
+    image: '/images/projects/bed.png',
+    technologies: ['Chart.js', 'React', 'Hypixel API', 'PlayerDB API', 'Craftatar API'],
+    githubLink: 'https://github.com/yourusername/portfolio',
+    liveLink: 'https://portfolio-demo.com'
+  },
+  {
+    title: 'Super Smash Bros Parody',
+    description: 'Remake of a popular video game, Super Smash Bros, with new characters like Waluigi, Goku, and The Mandalorian, and new arenas as well. I created all of the animations and effects myself, as well programmed all of the game\'s logic and mechanics.',
+    image: '/images/projects/ssb.png',
+    technologies: ['Unity', 'C#'],
+    githubLink: 'https://github.com/yourusername/portfolio',
+    liveLink: 'https://portfolio-demo.com'
+  },
+  {
+    title: 'mac',
+    description: 'A first-person game where the objective is to navigate a set of rooms while blasting and eliminating 15 target boxes as quick as possible',
+    image: '/images/projects/mac.png',
+    technologies: ['Unity', 'C#'],
     githubLink: 'https://github.com/yourusername/portfolio',
     liveLink: 'https://portfolio-demo.com'
   }
@@ -56,7 +72,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Featured Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Featured (Not All) Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div

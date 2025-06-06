@@ -7,15 +7,16 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Hi, I&apos;m <span className="text-blue-600">Your Name</span>
+              Hi, I&apos;m <span className="text-blue-600">Daniel</span>
             </h1>
             <h2 className="text-2xl sm:text-3xl text-gray-600 mb-8">
-              Computer Science Student & Software Developer
+              Honors Computer Science Student at The Ohio State University
             </h2>
             <p className="text-lg text-gray-600 mb-12">
-              I&apos;m passionate about building innovative solutions and creating impactful software.
-              Currently pursuing my degree in Computer Science while working on exciting projects
-              that combine technical expertise with creative problem-solving.
+              In <span className="text-lg text-red-600 mb-12 font-bold">elementary school</span>, I was first introduced to "coding" through Minecraft command blocks. In <span className="text-lg text-blue-600 mb-12 font-bold">7th grade</span>, I started experimenting with Arduinos. By <span  className="text-lg text-blue-600 mb-12 font-bold">highschool</span>, I was hooked on programming my own 
+              video games. By <span  className="text-lg text-blue-600 mb-12 font-bold">graduation</span>, I was staying up learning web development. <span  className="text-lg text-red-600 mb-12 font-bold">Now</span>, as a junior in college, I have built multiple full-stack 
+              applications and am actively exploring Big Data and machine learning. All my life, I have been passionate about finding innovative ways to solve problems
+              and I am eager to continue exploring my curiosities through technology.
             </p>
             <div className="flex justify-center lg:justify-start gap-4">
               <a
@@ -34,8 +35,8 @@ export default function Hero() {
           </div>
           <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-xl">
             <Image
-              src="/profile.jpg"
-              alt="Your Name"
+              src="/images/profile/profile2.jpg"
+              alt="Daniel Yi"
               fill
               className="object-cover"
               priority
