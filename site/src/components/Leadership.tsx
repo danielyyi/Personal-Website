@@ -65,7 +65,7 @@ export default function Leadership() {
                       </div>
                       <span className="text-gray-600 mt-2 lg:mt-0">{role.period}</span>
                     </div>
-                    <ul className="space-y-3 text-gray-600">
+                    <ul className="space-y-3 text-gray-600  mb-4">
                       {role.description.map((item, itemIndex) => (
                         <li key={itemIndex} className="flex items-start">
                           <span className="text-blue-500 mr-2">•</span>

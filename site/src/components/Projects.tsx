@@ -7,64 +7,62 @@ const projects = [
     description: ' (IN PROGRESS) Summarize selected pieces of text in articles, websites, and more',
     image: '/images/projects/chrome.png',
     technologies: ['Python', 'JavaScript', 'Chrome', 'OpenAI API'],
-    githubLink: 'https://github.com/yourusername/ecommerce',
-    liveLink: 'https://ecommerce-demo.com'
+    githubLink: 'https://github.com/danielyyi/TLDR-Chrome-Extension',
   },
   {
     title: 'AutoIntelligence',
     description: 'AI-powered program that detects when drivers are distracted from the road. I built this alongside a mock-Lyft app that could utilize this technology to asses the safety rating of drivers. Runner-up of the 2024 Hack OHI/O Hackathon (Honda Track).',
     image: '/images/projects/blackcar.png',
     technologies: ['Python', 'React', 'OpenCV', 'MediaPipe'],
-    githubLink: 'https://github.com/yourusername/task-manager',
-    liveLink: 'https://task-manager-demo.com'
+    githubLink: 'https://github.com/danielyyi/HackOHI-O-2024',
+    liveLink: 'https://youtu.be/13aUxjURqYY'
   },
   {
     title: 'NewThreads',
     description: 'Full-stack website designed to help startup clothing brands gain exposure to shoppers looking to support small, niche businesses.',
     image: '/images/projects/nt.png',
     technologies: ['React', 'Express', 'Node', 'MongoDB', 'GraphQL'],
-    githubLink: 'https://github.com/yourusername/weather-dashboard',
-    liveLink: 'https://weather-dashboard-demo.com'
+    githubLink: 'https://github.com/danielyyi/NewThreads',
+    liveLink: 'https://findnewthreads.com/'
   },
   {
     title: 'Buckeye Course Guide',
     description: 'At Ohio State, it\'s difficult to search for classes that cross off requirements. This website allows students to paste in chunks of courses from their Degree Audit and Advising Report to easily look up class information.',
     image: '/images/projects/osu.png',
     technologies: ['JavaScript', 'React', 'OSU API'],
-    githubLink: 'https://github.com/yourusername/recipe-finder',
-    liveLink: 'https://recipe-finder-demo.com'
+    liveLink: 'https://youtu.be/OLZQMVueu0M'
   },
   {
     title: 'Youstagram',
     description: 'An Instagram-like social media site with CRUD functionality. Customize and share posts, leave comments, search for users, etc.',
     image: '/images/projects/you.png',
     technologies: ['React', 'Express', 'Node', 'MongoDB'],
-    githubLink: 'https://github.com/yourusername/fitness-tracker',
-    liveLink: 'https://fitness-tracker-demo.com'
+    githubLink: 'https://github.com/danielyyi/Youstagram',
+    liveLink: 'https://youtu.be/ThnOPYyiddI'
   },
   {
     title: 'Bedwarstats.com',
     description: 'A stat-tracker website for a Minecraft PvP mini-game called \"Bedwars\". Displays player data and gives insights on strengths and weaknesses in an organized manner.',
     image: '/images/projects/bed.png',
     technologies: ['Chart.js', 'React', 'Hypixel API', 'PlayerDB API', 'Craftatar API'],
-    githubLink: 'https://github.com/yourusername/portfolio',
-    liveLink: 'https://portfolio-demo.com'
+    githubLink: 'https://github.com/danielyyi/Hypixel-Bedwars-Tracker',
+    liveLink: 'https://www.youtube.com/watch?v=xhrr1NCp9Lw&feature=youtu.be'
   },
   {
     title: 'Super Smash Bros Parody',
     description: 'Remake of a popular video game, Super Smash Bros, with new characters like Waluigi, Goku, and The Mandalorian, and new arenas as well. I created all of the animations and effects myself, as well programmed all of the game\'s logic and mechanics.',
     image: '/images/projects/ssb.png',
     technologies: ['Unity', 'C#'],
-    githubLink: 'https://github.com/yourusername/portfolio',
-    liveLink: 'https://portfolio-demo.com'
+    githubLink: 'https://github.com/danielyyi/Super-Copyright-Bros',
+    liveLink: 'https://youtu.be/zw8oHsihJfg'
   },
   {
     title: 'mac',
     description: 'A first-person game where the objective is to navigate a set of rooms while blasting and eliminating 15 target boxes as quick as possible',
     image: '/images/projects/mac.png',
     technologies: ['Unity', 'C#'],
-    githubLink: 'https://github.com/yourusername/portfolio',
-    liveLink: 'https://portfolio-demo.com'
+    githubLink: 'https://github.com/danielyyi/mac',
+    liveLink: 'https://youtu.be/HwOCTCE7xDw'
   }
 ]
 
@@ -101,22 +99,28 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex space-x-4">
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    <div className="w-6 h-6"><FaGithub /></div>
-                  </a>
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
-                  >
-                    <div className="w-6 h-6"><FaExternalLinkAlt /></div>
-                  </a>
+                  {project.githubLink && (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
+                      title="GitHub Repository"
+                    >
+                      <div className="w-6 h-6"><FaGithub /></div>
+                    </a>
+                  )}
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 hover:text-blue-600 transition-colors"
+                      title="Live Demo"
+                    >
+                      <div className="w-6 h-6"><FaExternalLinkAlt /></div>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
