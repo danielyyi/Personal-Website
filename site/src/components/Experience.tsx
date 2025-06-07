@@ -14,7 +14,7 @@ const experiences = [
     title: 'Teaching Assistant',
     company: 'The Ohio State University',
     period: 'Fall 2024',
-    image: '/images/projects/OSU.png',
+    image: '/images/projects/osu.png',
     description: [
       'Taught 70+ students core engineering principles, technical writing, and MATLAB programming'
     ]
