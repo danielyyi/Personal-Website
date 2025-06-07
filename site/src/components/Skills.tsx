@@ -25,8 +25,8 @@ const skills = [
       { name: 'C++', description: 'Applied in robotics competitions and engineering coursework for control systems and problem-solving' },
       { name: 'Java', description: 'Used in foundational coursework including Java I/II and for object-oriented programming assignments' },
       { name: 'C#', description: 'Used in Unity for game development and simulations' },
-      { name: 'SQL', description: 'Used for querying structured data and backend integration' },
-      { name: 'PHP', description: 'Used for backend scripting and web application logic' },
+      { name: 'SQL', description: 'Used for querying structured data and backend projects' },
+      { name: 'PHP', description: 'Used for backend scripting and web applications' },
       { name: 'Assembly', description: 'Applied in Systems I coursework for low-level hardware interactions' },
       { name: 'HTML/CSS', description: 'Used for creating structured and styled web interfaces' }
     ]
@@ -37,7 +37,7 @@ const skills = [
     items: [
       { name: 'MongoDB', description: 'Proficient in NoSQL schema design, used in full-stack apps and internship projects' },
       { name: 'SQL', description: 'Used in relational data storage and integration with backend services' },
-      { name: 'AWS S3', description: 'Used for storage and management of assets in cloud environments' }
+      { name: 'AWS S3', description: 'Used for storage of photos and management of assets in cloud environments' }
     ]
   },
   {
