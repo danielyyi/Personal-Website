@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa'
 
 const navItems = [
   { name: 'Home', href: '#home' },
@@ -10,6 +11,20 @@ const navItems = [
   { name: 'Experience', href: '#experience' },
   { name: 'Leadership', href: '#leadership' },
   { name: 'Contact', href: '#contact' },
+]
+
+const socialLinks = [
+
+  {
+    name: 'LinkedIn',
+    href: 'https://linkedin.com/in/danielyyi',
+    icon: <FaLinkedin className="w-5 h-5" />
+  },
+  {
+    name: 'GitHub',
+    href: 'https://github.com/danielyyi',
+    icon: <FaGithub className="w-5 h-5" />
+  }
 ]
 
 export default function Navbar() {
@@ -37,7 +52,7 @@ export default function Navbar() {
           >
             Daniel Yi
           </Link>
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -47,6 +62,20 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
+            <div className="flex items-center space-x-4 ml-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  title={link.name}
+                >
+                  {link.icon}
+                </a>
+              ))}
+            </div>
           </div>
           <button className="md:hidden text-gray-600 hover:text-gray-900">
             <svg

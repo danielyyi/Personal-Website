@@ -1,6 +1,18 @@
+'use client'
+
 import Image from 'next/image'
 
 const leadershipRoles = [
+  {
+    title: 'Hackathon Committee Member',
+    organization: 'Humana',
+    period: 'Present',
+    image: '/images/experience/humana.png',
+    description: [
+      '1 of 6 interns selected to organize Humana Hackathon consisting of 70+ intern participants.',
+      'Provide programming advice and support to participants during event, discuss prompts with executives, write-up rules, experiment with provided tools and resources, assist judges with scoring.'
+    ]
+  },
   {
     title: 'Vice President of DE&I',
     organization: 'Pi Sigma Epsilon',
@@ -11,17 +23,14 @@ const leadershipRoles = [
     ]
   },
   {
-    title: 'Hackathon Organizer',
-    organization: 'University Hackathon Committee',
-    period: '2023',
-    image: '/leadership2.jpg',
+    title: 'Co-leader (Student of the Year Candidate)',
+    organization: 'Leukemia and Lymphoma Society',
+    period: 'Spring 2022',
+    image: '/images/leadership/leukemia and lymphoma society.jpg',
     description: [
-      'Co-organized a 24-hour hackathon with 200+ participants',
-      'Coordinated with sponsors and secured $10,000 in prizes',
-      'Managed logistics, including venue, food, and technical support',
-      'Created and executed marketing strategy for the event'
+      'Led a team of 12 high school students to organize fundraising events and raise over $30,000 for the Leukemia and Lymphoma Society. Activities included meeting with sponsors, partnering with local restaurants, raising awareness on social media, and hosting a 3v3 basketball tournament.'
     ]
-  }
+  },
 ]
 
 export default function Leadership() {
