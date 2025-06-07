@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: 'NewThreads',
-    description: 'Full-stack website designed to help startup clothing brands gain exposure to shoppers looking to support small, niche businesses.',
+    description: 'Full-stack website designed to help startup clothing brands gain exposure to shoppers looking to support small, niche businesses. Login, register, list products, view product info, search, filter by style, filter by niche.',
     image: '/images/projects/nt.png',
     technologies: ['React', 'Express', 'Node', 'MongoDB', 'GraphQL'],
     githubLink: 'https://github.com/danielyyi/NewThreads',
