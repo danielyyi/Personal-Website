@@ -8,6 +8,7 @@ const projects = [
     image: '/images/projects/tldr.png',
     technologies: ['Python', 'JavaScript', 'Node', 'Chrome', 'OpenAI API'],
     githubLink: 'https://github.com/danielyyi/TLDR-Chrome-Extension',
+    liveLink: 'https://youtu.be/21A77E1vTYg',
     completionDate: 'Summer 2025'
   },
   {
