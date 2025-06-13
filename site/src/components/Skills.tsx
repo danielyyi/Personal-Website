@@ -20,47 +20,45 @@ const skills = [
     category: 'Languages',
     icon: <div className="w-6 h-4 text-blue-600"><FaCode /></div>,
     items: [
-      { name: 'JavaScript', description: 'Used for full-stack development in personal and team projects including social media and e-commerce apps' },
-      { name: 'Python', description: 'Utilized for data access, machine learning, and computer vision in both internship and hackathon settings' },
-      { name: 'C++', description: 'Applied in robotics competitions and engineering coursework for control systems and problem-solving' },
-      { name: 'Java', description: 'Used in foundational coursework including Java I/II and for object-oriented programming assignments' },
+      { name: 'JavaScript', description: 'Used for various web development projects' },
+      { name: 'Python', description: 'Big data and computer vision in both internship and hackathon settings' },
+      { name: 'C++', description: 'Learned through coursework at Ohio State (and Arduino)' },
+      { name: 'Java', description: 'Learned through coursework in high school and Ohio State' },
       { name: 'C#', description: 'Used in Unity for game development and simulations' },
-      { name: 'SQL', description: 'Used for querying structured data and backend projects' },
-      { name: 'PHP', description: 'Used for backend scripting and web applications' },
-      { name: 'Assembly', description: 'Applied in Systems I coursework for low-level hardware interactions' },
-      { name: 'HTML/CSS', description: 'Used for creating structured and styled web interfaces' }
+      { name: 'PHP', description: 'Web development' },
+      { name: 'Assembly', description: 'Learned through Systems 1 course' }
     ]
   },
   {
     category: 'Databases',
     icon: <div className="w-6 h-4 text-blue-600"><FaDatabase /></div>,
     items: [
-      { name: 'MongoDB', description: 'Proficient in NoSQL schema design, used in full-stack apps and internship projects' },
-      { name: 'SQL', description: 'Used in relational data storage and integration with backend services' },
-      { name: 'AWS S3', description: 'Used for storage of photos and management of assets in cloud environments' }
+      { name: 'MongoDB', description: 'Full-stack development projects and internship work' },
+      { name: 'SQL', description: 'Backend projects and querying data during Humana internship' },
+      { name: 'AWS S3', description: "Used to store photos"}
     ]
   },
   {
     category: 'Tools',
     icon: <div className="w-6 h-4 text-blue-600"><FaTools /></div>,
     items: [
-      { name: 'Git', description: 'Used for version control and team collaboration on projects and internships' },
+      { name: 'Git', description: 'Version control and team collaboration on projects and internships' },
       { name: 'Power BI', description: 'Used in internship to build dashboards with DAX for system visualization and reporting' },
-      { name: 'Unity', description: 'Used for building simulations and interfacing with C# in engineering projects' },
-      { name: 'Unix/Linux', description: 'Used for systems programming and development environment setup' },
-      { name: 'Eclipse', description: 'Used as an IDE for Java/C++ development in coursework and projects' }
+      { name: 'Unity', description: 'Game development' },
+      { name: 'Unix/Linux', description: 'Systems programming projects' },
+      { name: 'Eclipse', description: 'IDE for Java development in coursework and projects' }
     ]
   },
   {
     category: 'Libraries',
     icon: <div className="w-6 h-4 text-blue-600"><FaCloud /></div>,
     items: [
-      { name: 'React', description: 'Frontend library used to build interactive UIs for web apps including e-commerce and hackathon projects' },
-      { name: 'Node.js', description: 'Backend runtime used to build APIs and manage server logic in full-stack applications' },
-      { name: 'Next.js', description: 'Used for React-based static and dynamic site generation in personal portfolio and projects' },
-      { name: 'Express.js', description: 'Used in Node.js backend to handle routing and middleware in full-stack applications' },
-      { name: 'GraphQL', description: 'Used with Apollo server/client for querying and mutating NoSQL data in web apps' },
-      { name: 'MediaPipe', description: 'Used with OpenCV in a hackathon project to track eye/head movement for driver distraction detection' },
+      { name: 'React', description: 'Frontend development for various web projects' },
+      { name: 'Node', description: 'Backend runtime used to build APIs and manage server logic in full-stack applications' },
+      { name: 'Next', description: 'Utilized for frontend development for web projects' },
+      { name: 'Express', description: 'Used in Node.js backend to handle routing and middleware' },
+      { name: 'GraphQL', description: 'Helps with querying structured MongoDB data' },
+      { name: 'MediaPipe', description: 'Track body movement with camera' },
       { name: 'OpenCV', description: 'Used for image processing and computer vision tasks in machine learning projects' }
     ]
   }

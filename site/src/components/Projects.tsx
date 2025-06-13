@@ -4,11 +4,11 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 const projects = [
   {
     title: 'TL;DR Chrome Extension',
-    description: 'Summarize selected pieces of text in articles, websites, and more',
-    image: '/images/projects/chrome.png',
-    technologies: ['Python', 'JavaScript', 'Chrome', 'OpenAI API'],
+    description: 'Summarize and explain selected pieces of text in articles, websites, and more. Learned the process for building a chrome extension and utilized an LLM and GenAI to analyze and generate text.',
+    image: '/images/projects/tldr.png',
+    technologies: ['Python', 'JavaScript', 'Node', 'Chrome', 'OpenAI API'],
     githubLink: 'https://github.com/danielyyi/TLDR-Chrome-Extension',
-    completionDate: 'In Progress'
+    completionDate: 'Summer 2025'
   },
   {
     title: 'AutoIntelligence',
