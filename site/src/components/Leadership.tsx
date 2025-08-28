@@ -14,7 +14,7 @@ const leadershipRoles = [
     ]
   },
   {
-    title: 'Vice President of DE&I',
+    title: 'Vice President',
     organization: 'Pi Sigma Epsilon',
     period: 'Fall 2024 - Present',
     image: '/images/leadership/psephoto.jpg',
