@@ -37,7 +37,7 @@ export default function Hero() {
               className="text-lg text-gray-600 mb-12"
             >
               In <span className="text-lg text-red-600 mb-12 font-bold">elementary school</span>, I was first introduced to "coding" through Minecraft command blocks. In <span className="text-lg text-blue-600 mb-12 font-bold">7th grade</span>, I started experimenting with Arduinos. By <span  className="text-lg text-blue-600 mb-12 font-bold">highschool</span>, I was hooked on programming my own 
-              video games. By <span  className="text-lg text-blue-600 mb-12 font-bold">graduation</span>, I was staying up learning web development. <span  className="text-lg text-red-600 mb-12 font-bold">Now</span>, as a junior in college, I have built multiple full-stack 
+              video games. By <span  className="text-lg text-blue-600 mb-12 font-bold">graduation</span>, I was staying up learning web development. <span  className="text-lg text-red-600 mb-12 font-bold">Now</span>, as a senior in college, I have built multiple full-stack 
               applications and am actively exploring Big Data and machine learning. All my life, I have been passionate about finding innovative ways to solve problems
               and I am eager to continue exploring my curiosities through technology.
             </motion.p>

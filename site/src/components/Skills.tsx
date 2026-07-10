@@ -46,7 +46,8 @@ const skills = [
       { name: 'Power BI', description: 'Used in internship to build dashboards with DAX for system visualization and reporting' },
       { name: 'Unity', description: 'Game development' },
       { name: 'Unix/Linux', description: 'Systems programming projects' },
-      { name: 'Eclipse', description: 'IDE for Java development in coursework and projects' }
+      { name: 'Eclipse', description: 'IDE for Java development in coursework and projects' },
+      { name: 'Claude Code', description: 'Learning harness engineering, subagent workflows, etc.' }
     ]
   },
   {

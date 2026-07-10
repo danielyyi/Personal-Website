@@ -1,7 +1,15 @@
 import Image from 'next/image'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaMusic } from 'react-icons/fa'
 
 const projects = [
+  {
+    title: 'Chorus',
+    description: 'An iOS app for sharing song recommendations with friends. Send a track and earn points based on how much your friends end up loving it and how niche the find is.',
+    image: null,
+    technologies: ['Swift', 'SwiftUI'],
+    completionDate: 'In Progress',
+    inProgress: true
+  },
   {
     title: 'TL;DR Chrome Extension',
     description: 'Summarize and explain selected pieces of text in articles, websites, and more. Learned the process for building a chrome extension and utilized an LLM and GenAI to analyze and generate text.',
@@ -84,15 +92,28 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative"
+              className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative ${
+                project.inProgress ? 'ring-2 ring-amber-400' : ''
+              }`}
             >
               <div className="relative h-48">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="h-full w-full bg-gradient-to-br from-amber-100 to-blue-100 flex items-center justify-center">
+                    <div className="w-12 h-12 text-blue-400"><FaMusic className="w-full h-full" /></div>
+                  </div>
+                )}
+                {project.inProgress && (
+                  <span className="absolute top-3 left-3 bg-amber-400 text-amber-950 text-xs font-semibold px-3 py-1 rounded-full shadow">
+                    🚧 Currently Building
+                  </span>
+                )}
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
@@ -132,7 +153,9 @@ export default function Projects() {
                       </a>
                     )}
                   </div>
-                  <span className="text-blue-600 font-medium text-sm">{project.completionDate}</span>
+                  <span className={`font-medium text-sm ${project.inProgress ? 'text-amber-600' : 'text-blue-600'}`}>
+                    {project.completionDate}
+                  </span>
                 </div>
               </div>
             </div>

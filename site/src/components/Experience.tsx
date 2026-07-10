@@ -3,6 +3,15 @@ import Image from 'next/image'
 const experiences = [
   {
     title: 'Software Engineering Intern',
+    company: 'Capital One',
+    period: 'Summer 2026',
+    image: '/images/experience/capitalone.png',
+    description: [
+      'Intern on the Cyber Detection and Mitigation Engineering team',
+    ]
+  },
+  {
+    title: 'Software Engineering Intern',
     company: 'Humana',
     period: 'Present',
     image: '/images/experience/humana.png',
