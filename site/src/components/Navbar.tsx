@@ -43,14 +43,14 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-boho-cream/90 backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link
             href="#home"
-            className="text-xl font-bold text-gray-800 hover:text-gray-600 transition-colors"
+            className="text-2xl font-serif italic font-semibold text-boho-espresso hover:text-boho-terracotta transition-colors"
           >
             Daniel Yi
           </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-boho-brown hover:text-boho-terracotta transition-colors"
               >
                 {item.name}
               </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  className="text-boho-brown hover:text-boho-terracotta transition-colors"
                   title={link.name}
                 >
                   {link.icon}
@@ -79,8 +79,8 @@ export default function Navbar() {
               ))}
             </div>
           </div>
-          <button 
-            className="md:hidden text-gray-600 hover:text-gray-900"
+          <button
+            className="md:hidden text-boho-brown hover:text-boho-terracotta"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg
@@ -103,12 +103,12 @@ export default function Navbar() {
         
         {/* Mobile menu */}
         <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-white rounded-lg shadow-lg mt-2">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-boho-sand rounded-lg shadow-lg mt-2">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors"
+                className="block px-3 py-2 text-boho-brown hover:text-boho-terracotta hover:bg-boho-cream rounded-md transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
@@ -121,7 +121,7 @@ export default function Navbar() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                  className="text-boho-brown hover:text-boho-terracotta transition-colors"
                   title={link.name}
                 >
                   {link.icon}

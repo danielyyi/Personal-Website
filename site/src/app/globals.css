@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-rgb: 255, 255, 255;
+  --foreground-rgb: 59, 42, 32;
+  --background-rgb: 251, 243, 228;
 }
 
 html {
@@ -13,5 +13,35 @@ html {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background-color: rgb(var(--background-rgb));
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(139, 94, 60, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+::selection {
+  background-color: #D9A441;
+  color: #3B2A20;
+}
+
+/* Polaroid photo frame */
+.polaroid {
+  background: #FFFDF8;
+  padding: 0.75rem 0.75rem 2.25rem 0.75rem;
+  box-shadow: 0 10px 25px -8px rgba(59, 42, 32, 0.35), 0 2px 6px rgba(59, 42, 32, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.03) !important;
+  box-shadow: 0 18px 35px -10px rgba(59, 42, 32, 0.4), 0 4px 10px rgba(59, 42, 32, 0.2);
+  z-index: 10;
+}
+
+.washi-tape {
+  position: absolute;
+  height: 1.75rem;
+  width: 4.5rem;
+  opacity: 0.75;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }

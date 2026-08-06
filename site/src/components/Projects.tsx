@@ -85,15 +85,15 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-boho-sand/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Featured Projects</h2>
+        <h2 className="font-serif text-3xl font-semibold text-center mb-12 text-boho-espresso">Featured Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative ${
-                project.inProgress ? 'ring-2 ring-amber-400' : ''
+              className={`bg-boho-cream rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative ${
+                project.inProgress ? 'ring-2 ring-boho-mustard' : ''
               }`}
             >
               <div className="relative h-48">
@@ -105,24 +105,24 @@ export default function Projects() {
                     className="object-cover"
                   />
                 ) : (
-                  <div className="h-full w-full bg-gradient-to-br from-amber-100 to-blue-100 flex items-center justify-center">
-                    <div className="w-12 h-12 text-blue-400"><FaMusic className="w-full h-full" /></div>
+                  <div className="h-full w-full bg-gradient-to-br from-boho-mustard/30 to-boho-terracotta/30 flex items-center justify-center">
+                    <div className="w-12 h-12 text-boho-terracotta"><FaMusic className="w-full h-full" /></div>
                   </div>
                 )}
                 {project.inProgress && (
-                  <span className="absolute top-3 left-3 bg-amber-400 text-amber-950 text-xs font-semibold px-3 py-1 rounded-full shadow">
+                  <span className="absolute top-3 left-3 bg-boho-mustard text-boho-espresso text-xs font-semibold px-3 py-1 rounded-full shadow">
                     🚧 Currently Building
                   </span>
                 )}
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="font-serif text-xl font-semibold text-boho-espresso mb-2">{project.title}</h3>
+                <p className="text-boho-brown/90 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                      className="bg-boho-sage/20 text-boho-olive text-sm px-3 py-1 rounded-full"
                     >
                       {tech}
                     </span>
@@ -135,7 +135,7 @@ export default function Projects() {
                         href={project.githubLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-blue-600 transition-colors"
+                        className="text-boho-brown hover:text-boho-terracotta transition-colors"
                         title="GitHub Repository"
                       >
                         <div className="w-6 h-6"><FaGithub /></div>
@@ -146,14 +146,14 @@ export default function Projects() {
                         href={project.liveLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-blue-600 transition-colors"
+                        className="text-boho-brown hover:text-boho-terracotta transition-colors"
                         title="Live Demo"
                       >
                         <div className="w-6 h-6"><FaExternalLinkAlt /></div>
                       </a>
                     )}
                   </div>
-                  <span className={`font-medium text-sm ${project.inProgress ? 'text-amber-600' : 'text-blue-600'}`}>
+                  <span className={`font-medium text-sm ${project.inProgress ? 'text-boho-gold' : 'text-boho-terracotta'}`}>
                     {project.completionDate}
                   </span>
                 </div>

@@ -8,7 +8,25 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        sans: ['var(--font-body)', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        serif: ['var(--font-display)', 'Georgia', 'serif'],
+        hand: ['var(--font-hand)', 'cursive'],
+      },
+      colors: {
+        boho: {
+          cream: '#FBF3E4',
+          sand: '#F1E4CE',
+          terracotta: '#C1663D',
+          rust: '#A8461F',
+          clay: '#D98B5F',
+          mustard: '#D9A441',
+          gold: '#C9942C',
+          sage: '#8A9B6E',
+          olive: '#6B7A4F',
+          rose: '#C97064',
+          brown: '#5C4433',
+          espresso: '#3B2A20',
+        },
       },
     },
   },

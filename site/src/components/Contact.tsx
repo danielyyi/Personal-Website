@@ -25,9 +25,9 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-boho-sand/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Get in Touch</h2>
+        <h2 className="font-serif text-3xl font-semibold text-center mb-12 text-boho-espresso">Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
           {contactInfo.map((info, index) => (
             <a
@@ -35,11 +35,11 @@ export default function Contact() {
               href={info.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col items-center text-center w-full max-w-md"
+              className="bg-boho-cream rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col items-center text-center w-full max-w-md"
             >
-              <div className="text-blue-600 mb-6">{info.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{info.label}</h3>
-              <p className="text-gray-600">{info.value}</p>
+              <div className="text-boho-terracotta mb-6">{info.icon}</div>
+              <h3 className="text-lg font-semibold text-boho-espresso mb-2">{info.label}</h3>
+              <p className="text-boho-brown/90">{info.value}</p>
             </a>
           ))}
         </div>

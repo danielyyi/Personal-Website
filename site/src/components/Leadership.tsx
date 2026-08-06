@@ -35,17 +35,17 @@ const leadershipRoles = [
 
 export default function Leadership() {
   return (
-    <section id="leadership" className="py-20 bg-gray-50">
+    <section id="leadership" className="py-20 bg-boho-sand/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-900">Leadership & Activities</h2>
+        <h2 className="font-serif text-3xl font-semibold text-center mb-12 text-boho-espresso">Leadership & Activities</h2>
         <div className="space-y-16">
           {leadershipRoles.map((role, index) => (
             <div
               key={index}
               className="relative"
             >
-              <div className="absolute -left-4 top-0 h-full w-1 bg-blue-500 rounded-full"></div>
-              <div className="bg-white rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
+              <div className="absolute -left-4 top-0 h-full w-1 bg-boho-terracotta rounded-full"></div>
+              <div className="bg-boho-cream rounded-lg shadow-xl overflow-hidden hover:shadow-2xl transition-shadow">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                   <div className="lg:col-span-4 relative h-64 lg:h-full">
                     <Image
@@ -58,17 +58,17 @@ export default function Leadership() {
                   <div className="lg:col-span-8 p-8">
                     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-6">
                       <div>
-                        <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                        <h3 className="font-serif text-2xl font-semibold text-boho-espresso mb-2">
                           {role.title}
                         </h3>
-                        <p className="text-blue-600 text-lg">{role.organization}</p>
+                        <p className="text-boho-terracotta text-lg">{role.organization}</p>
                       </div>
-                      <span className="text-gray-600 mt-2 lg:mt-0">{role.period}</span>
+                      <span className="text-boho-brown/80 mt-2 lg:mt-0">{role.period}</span>
                     </div>
-                    <ul className="space-y-3 text-gray-600  mb-4">
+                    <ul className="space-y-3 text-boho-brown/90 mb-4">
                       {role.description.map((item, itemIndex) => (
                         <li key={itemIndex} className="flex items-start">
-                          <span className="text-blue-500 mr-2">•</span>
+                          <span className="text-boho-terracotta mr-2">•</span>
                           {item}
                         </li>
                       ))}
