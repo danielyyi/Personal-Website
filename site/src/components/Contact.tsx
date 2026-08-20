@@ -37,7 +37,7 @@ export default function Contact() {
               rel="noopener noreferrer"
               className="bg-boho-cream rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow flex flex-col items-center text-center w-full max-w-md"
             >
-              <div className="text-boho-terracotta mb-6">{info.icon}</div>
+              <div className="text-boho-forest mb-6">{info.icon}</div>
               <h3 className="text-lg font-semibold text-boho-espresso mb-2">{info.label}</h3>
               <p className="text-boho-brown/90">{info.value}</p>
             </a>

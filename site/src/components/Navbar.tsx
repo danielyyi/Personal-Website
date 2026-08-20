@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <Link
             href="#home"
-            className="text-2xl font-serif italic font-semibold text-boho-espresso hover:text-boho-terracotta transition-colors"
+            className="text-2xl font-serif italic font-semibold text-boho-espresso hover:text-boho-forest transition-colors"
           >
             Daniel Yi
           </Link>
@@ -59,7 +59,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-boho-brown hover:text-boho-terracotta transition-colors"
+                className="text-boho-brown hover:text-boho-forest transition-colors"
               >
                 {item.name}
               </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-boho-brown hover:text-boho-terracotta transition-colors"
+                  className="text-boho-brown hover:text-boho-forest transition-colors"
                   title={link.name}
                 >
                   {link.icon}
@@ -80,7 +80,7 @@ export default function Navbar() {
             </div>
           </div>
           <button
-            className="md:hidden text-boho-brown hover:text-boho-terracotta"
+            className="md:hidden text-boho-brown hover:text-boho-forest"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <svg
@@ -108,7 +108,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-boho-brown hover:text-boho-terracotta hover:bg-boho-cream rounded-md transition-colors"
+                className="block px-3 py-2 text-boho-brown hover:text-boho-forest hover:bg-boho-cream rounded-md transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {item.name}
@@ -121,7 +121,7 @@ export default function Navbar() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-boho-brown hover:text-boho-terracotta transition-colors"
+                  className="text-boho-brown hover:text-boho-forest transition-colors"
                   title={link.name}
                 >
                   {link.icon}

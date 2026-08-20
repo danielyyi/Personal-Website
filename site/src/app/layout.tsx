@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Karla, Caveat } from "next/font/google";
+import { Fraunces, Karla, Caveat, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -21,6 +21,13 @@ const caveat = Caveat({
   weight: ["500", "600", "700"],
 });
 
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-accent",
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+});
+
 export const metadata: Metadata = {
   title: "Daniel Yi - Portfolio",
   description: "Honors Computer Science Student at The Ohio State University",
@@ -33,7 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fraunces.variable} ${karla.variable} ${caveat.variable} font-sans antialiased bg-boho-cream text-boho-brown`}>
+      <body className={`${fraunces.variable} ${karla.variable} ${caveat.variable} ${cormorant.variable} font-sans antialiased bg-boho-cream text-boho-brown`}>
         {children}
       </body>
     </html>
