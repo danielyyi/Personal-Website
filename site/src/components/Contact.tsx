@@ -25,7 +25,7 @@ const contactInfo = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-boho-sand/40">
+    <section id="contact" className="py-20 bg-boho-cream">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-serif text-3xl font-semibold text-center mb-12 text-boho-espresso">Get in Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">

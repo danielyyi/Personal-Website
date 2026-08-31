@@ -11,6 +11,7 @@ const projects = [
     description: 'An iOS app for sharing song recommendations with friends. Send a track and earn points based on how much your friends end up loving it and how niche the find is.',
     image: null,
     technologies: ['Swift', 'SwiftUI'],
+    githubLink: 'https://github.com/danielyyi/Chorus',
     completionDate: 'In Progress',
     inProgress: true
   },
@@ -96,17 +97,9 @@ const tossConfigs = [
 ]
 
 const polaroidVariants: Variants = {
-  enter: {
-    opacity: 0,
-  },
-  center: {
-    opacity: 1,
-    transition: { duration: 0.35, ease: 'easeOut' },
-  },
-  exit: {
-    opacity: 0,
-    transition: { duration: 0 },
-  },
+  enter: { opacity: 0 },
+  center: { opacity: 1, transition: { duration: 0.35, ease: 'easeOut' } },
+  exit: { opacity: 0, transition: { duration: 0.2, ease: 'easeIn' } },
 }
 
 const textVariants: Variants = {
@@ -118,11 +111,11 @@ const textVariants: Variants = {
 export default function Projects() {
   const [index, setIndex] = useState(0)
   const [direction, setDirection] = useState(1)
+  const [imgLoaded, setImgLoaded] = useState(!projects[0].image)
   const isAnimatingRef = useRef(false)
 
   const project = projects[index]
   const toss = tossConfigs[index % tossConfigs.length]
-  const imageOnLeft = index % 2 === 0
 
   const preloadSrcs = [1, -1]
     .map((delta) => projects[(index + delta + projects.length) % projects.length].image)
@@ -131,8 +124,10 @@ export default function Projects() {
   const advance = (delta: 1 | -1) => {
     if (isAnimatingRef.current) return
     isAnimatingRef.current = true
+    const next = (index + delta + projects.length) % projects.length
     setDirection(delta)
-    setIndex((prev) => (prev + delta + projects.length) % projects.length)
+    setImgLoaded(!projects[next].image)
+    setIndex(next)
     window.setTimeout(() => {
       isAnimatingRef.current = false
     }, 450)
@@ -157,10 +152,10 @@ export default function Projects() {
                   key={`img-${index}`}
                   variants={polaroidVariants}
                   initial="enter"
-                  animate="center"
+                  animate={imgLoaded ? 'center' : 'enter'}
                   exit="exit"
                   style={{ rotate: toss.rotateTo }}
-                  className={`polaroid relative mx-auto w-full max-w-sm ${imageOnLeft ? 'md:order-1' : 'md:order-2'}`}
+                  className="polaroid relative mx-auto w-full max-w-sm md:order-1"
                 >
                   <div className={`washi-tape ${toss.tape} -top-3 left-1/2 -translate-x-1/2 ${toss.tapeRotate}`} />
                   <div className="relative h-72 sm:h-80 w-full">
@@ -172,6 +167,8 @@ export default function Projects() {
                         sizes="(min-width: 768px) 384px, 90vw"
                         priority
                         className="object-cover"
+                        onLoad={() => setImgLoaded(true)}
+                        onError={() => setImgLoaded(true)}
                       />
                     ) : (
                       <div className="h-full w-full bg-gradient-to-br from-boho-mustard/30 to-boho-forest/30 flex items-center justify-center">
@@ -198,7 +195,7 @@ export default function Projects() {
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  className={`text-center md:text-left ${imageOnLeft ? 'md:order-2' : 'md:order-1'}`}
+                  className="text-center md:text-left md:order-2"
                 >
                   <h3 className="font-serif text-3xl font-semibold text-boho-espresso mb-4">{project.title}</h3>
                   <p className="text-boho-brown/90 mb-6 leading-relaxed">{project.description}</p>

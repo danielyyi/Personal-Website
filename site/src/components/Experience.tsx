@@ -13,7 +13,7 @@ const experiences: TimelineEntry[] = [
   {
     title: 'Software Engineering Intern',
     subtitle: 'Humana',
-    period: 'Present',
+    period: 'Summer 2025',
     image: '/images/experience/humana.png',
     description: [
       'Intern on the Claims Administration Systems (CAS) team',

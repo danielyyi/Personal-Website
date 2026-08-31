@@ -22,7 +22,7 @@ const photos = [
   {
     src: '/images/gallery/mirror-selfie.jpg',
     alt: 'Daniel Yi',
-    caption: 'On the go',
+    caption: 'work fit',
     rotate: '-rotate-2',
     tape: 'bg-boho-rose/70',
     tapeRotate: '-rotate-2',
@@ -31,12 +31,9 @@ const photos = [
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="py-20 bg-boho-sand/40">
+    <section id="gallery" className="py-20 bg-boho-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-serif text-3xl font-semibold text-center mb-4 text-boho-espresso">Beyond the Code</h2>
-        <p className="font-hand text-2xl text-center text-boho-olive mb-16 max-w-2xl mx-auto">
-          When I&apos;m not programming, you can probably find me playing music with my band or catching a show with friends.
-        </p>
+        <h2 className="font-serif text-3xl font-semibold text-center mb-16 text-boho-espresso">Beyond the Code</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-8 gap-y-16 px-4">
           {photos.map((photo, index) => (
             <div
